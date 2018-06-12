@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>钱包</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" href="../public/css/public.css">
+<script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current" id="page-index">
+        <div class="panel-overlay"></div>
+		<script>
+			if(top != self){
+			   window.parent.location.href="/templates/wallet.html";
+			   window.parent.console.log('执行到这了');
+			};
+		</script>
+        <link rel="stylesheet" href="../public/css/index.css">
+        <div class="top bar bg-jf">
+			<div class="header">
+				<a class="user-portrait open-panel" data-panel='#qb-lpanel'><img src="../public/images/user_icon.png" alt="" /></a>
+				<div class="buttons-row hd-tab">
+					<span style="width:100%;text-align: center;font-size: 0.875rem;display: block;">积分</span>
+					<!--<a href="#user-jf" style="border-radius: 0.25rem;" class="tab-link active button">积分</a>-->
+					<!--<a href="#user-kj" class="tab-link button">卡券</a>-->
+				</div>
+				<span class="detail">
+					<a href="/templates/integral_detail.html" data-no-cache="true"><img src="../public/images/detail_icon.png" alt="" />明细</a>
+				</span>
+			</div>
+			<div class="integral-box">
+				<div class="jf-info">
+					<p class="user-integral" action-type="clickIntegral"><span>账户积分总估值</span><i><img src="../public/images/wh-icon.png"></i></p>
+					<p class="user-asset"><span class="asset" data-type="asset">0.00</span><span class="sub radio-unit" data-type="" radio-unit="0">元</span></p>
+				</div>
+			</div>
+        </div>
+        <div class="content native-scroll">
+            <div class="tabs" style="height:100%;">
+                <div class="tab active" id="user-jf" style="height:100%;">
+                    <!--我的积分账户-->
+                    <div style="height:50%;" id="getdivH">
+                      <div class="my_account" style="height:15%;">
+                          <span>我的积分账户</span>
+                          <span class="pull-right change">
+                          	<a href="" class="external" style="position: relative;" id="get">
+                          		 批量交换&nbsp;<img src="../public/images/piliang.png" alt="">
+                          	</a>
+                          </span>
+                      </div>
+                      <div class="all_list clearfix" style="height:85%;">
+                          <ul class="clearfix hide" data-type="getIntegrallist" style="height:85%;">
+                          </ul>
+                          <div class="isOrNot hide">您未关联积分账户</div>
+                          <p class="seep" style="height:15%;">
+                            <a class="showmoreA">查看更多</a>
+                          </p>
+                      </div>
+                    </div>
+                      <!-- <p style="text-align: center;">
+                          <a class="showmoreA"></a>
+                          <a class="isOrNot"></a>
+                    </p> -->
+                    <!--待关联商户-->
+                    <div class="wait_conn clearfix" style="height:50%;">
+                        <div class="my_account" style="height:15%;">
+                            <span>待关联账户</span>
+                            <span class="pull-right modal-gl">
+                            	批量关联&nbsp;<img src="../public/images/piliang.png" alt="">
+                            </span>
+                        </div>
+                        <div class="business" style="height:85%;">
+                            <ul data-type="notrelated" style="height:85%;">
+                            </ul>
+                            <div class="isOrNot hide">您已关联所有积分账户</div>
+                            <p class="seep" style="height:15%;">
+                                <a class="showmoreB" href="/templates/not_related.html">查看更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kj-list tab" id="user-kj">
+                    <div class="nearby bg-jf">
+                        <div class="sitename">
+                            <h3>附近好券</h3>
+                            <span>三元桥</span>
+                        </div>
+                        <div class="nummoney">
+                            <h3>30</h3>
+                            <span>
+                                <span>元</span>
+                                <span>抵用券</span>
+                            </span>
+                        </div>
+                        <div class="nearby-logo">
+                            <!-- <img src="../public/images/seller-logo.gif"/> -->
+                        </div>
+                    </div>
+                    <div class="ticketlist">
+                        <dl>
+                            <dt>我的卡券<span>25</span></dt>
+                            <dd class="ticketbox">
+                            <a href="#">
+                                <div class="ticket-info">
+                                    <div class="ticket-money">
+                                        <h4>15</h4>
+                                        <div class="ticket-unit">
+                                            <span>元</span>
+                                            <span class="ticket-type">抵用券</span>
+                                        </div>
+                                    </div>
+                                    <p>剩余有效期:108天</p>
+                                </div>
+                            </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部栏-->
+        <nav class="bar bar-tab bar-footer">
+            <a class="tab-item external active" href="/templates/wallet.html">
+                <i class="footer-icon icon-qb"></i>
+                <span class="tab-label tab_bottom">钱包</span>
+            </a>
+            <a class="tab-item external" href="/templates/exchange.html">
+                <i class="footer-icon icon-dh"></i>
+                <span class="tab-label tab_bottom">兑换</span>
+            </a>
+            <a class="tab-item external" href="/templates/project/project.html">
+                <i class="footer-icon icon-gy"></i>
+                <span class="tab-label tab_bottom">公益</span>
+            </a>
+            <!-- <a class="tab-item external" href="/templates/market/market.html">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label tab_bottom">商城</span>
+            </a> -->
+            <a class="tab-item external" href="/templates/cards.html">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label tab_bottom">卡券</span>
+            </a>
+        </nav>
+    </div>
+    <div class="panel panel-left panel-reveal theme-white" id="qb-lpanel">
+        <div class="content-block">
+            <div class="header bg-jf">
+                <div>
+                    <img src="../public/images/user_icon.png" alt="" class="close-panel">
+                    <br>
+                    <span class="user_title"></span>
+                </div>
+            </div>
+            <div class="body">
+                <!-- <a href="/templates/userlogin.html" class="external"><img src="../public/images/login_logo.png"><span>登录</span></a> -->
+                <a href="/templates/modify_name.html" class="external"><img src="../public/images/nicheng_logo.png"><span>昵称设置</span></a>
+                <a href="/templates/modify_password.html" class="external"><img src="../public/images/mima_logo.png"><span>密码修改</span></a>
+                <a href="/templates/bind_phoneNumber.html" class="external"><img src="../public/images/bind_logo.png"><span>绑定手机号</span></a>
+                <a href="/templates/assistance.html" class="external"><img style="width:.7rem;" src="../public/images/bzh.png"><span>帮助</span></a>
+                <a href="#" action-type="logout" class="external"><img style="width:.7rem;" src="../public/images/gb.png"><span>退出登录</span></a>
+            </div>
+        </div>
+        <div class="list-block">
+            <!-- .... -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

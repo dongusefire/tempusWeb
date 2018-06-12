@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>积分交换平台注册</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+    <script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <link rel="stylesheet" type="text/css" href="../public/css/register.css">
+    <div class="register-container page" id="register">
+      <header class="bar bar-nav">
+          <h1 class="title">注册账号</h1>
+          <a href="#" class="icon icon-left pull-left back" style="color:#fff;"></a>
+      </header>
+      <div class="content">
+          <div class="wrap tabs">
+          <!-- 第一个下一步-->
+              <div class="tab active">
+                  <div class="input-container" style="position: relative;">
+                      <input type="text" name="phone_number" class="phone_number" placeholder="请输入手机号" autocomplete="off" id="number"/>
+                      <!-- <button type="button" style="" id="btn"  class="btn">获取短信验证码</button> -->
+                  </div>
+                  <div class="input-container" style="position: relative;">
+                          <input type="text" placeholder="请输入验证码" class="username" name="captche">
+                          <img id="registerimg" src="/admin/operate/regcaptcha" style="width:100px;  text-align:right; position: absolute; top:0.75rem;right: 23px;">
+                  </div>
+                  <input type="button" value="下一步"  class="confirm btn-next classinput" style="background-color: rgb(252, 90, 40);">
+              </div>
+          <!-- 第二个下一步-->
+              <div class="tab">
+                  <div class="input-container msgwords">
+                        <span>
+                            <input type="text" name="Verification_code" class="verify" placeholder="输入短信验证码" autocomplete="off">
+                            <button class="get" id="J_getCode">获取验证码</button>
+                            <button class="get" id="J_resetCode" style="background-color: #dadada;"><span id="J_second">60</span>秒后重发</button>
+                        </span>
+                  </div>
+                  <input type="button" value="下一步"  class="confirm btn-dnext classinput" style="background-color: rgb(252, 90, 40);">
+              </div>
+          <!-- 提交 -->
+              <div class="tab">
+                  <div class="input-container">
+                      <span>
+                      <input type="password" name="password" class="password" placeholder="设置登录密码" oncontextmenu="return false" onpaste="return false"/>
+                      </span>
+                  </div>
+                  <div class="input-container">
+                      <span>
+                      <input type="password" name="repeat_pwd" placeholder="请再次输入新密码" oncontextmenu="return false" onpaste="return false"/>
+                      </span>
+                  </div>
+                  <input type="button" value="注 册" class="confirm btn-create classinput" style="background-color: rgb(252, 90, 40);">
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

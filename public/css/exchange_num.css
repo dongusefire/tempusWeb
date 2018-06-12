@@ -1,0 +1,259 @@
+#exchange_num header.bar {
+	background: #394351;
+}
+#exchange_num header.bar a.icon {
+	color:#fff;
+}
+#exchange_num header.bar .title {
+	color:#fff;
+}
+#exchange_num header.bar:after {
+	content: initial;
+}
+#exchange_num .content{
+	background:#f9f9f9;
+}
+#exchange_num .form-list {
+	background: #fff;
+}
+#exchange_num .form-list .items-box {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	padding: 1rem 0;
+	margin:0 0.5rem;
+	background-color: #fff;
+}
+#exchange_num .form-list .items-box .items-title {
+	color:#3b4451;
+	font-size:0.7rem;
+	line-height: 1.6rem;
+}
+#exchange_num .form-list .items-box .J_Stock {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+#exchange_num .form-list .items-box .J_Stock .button {
+	color:#798186;
+	width: 1.6rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+	border:1px #d8d8d8 solid;
+	border-radius: 0.2rem;
+	background-color: #f3f3f3;
+}
+#exchange_num .form-list .items-box .J_Stock .input_text {
+	border:1px #d8d8d8 solid;
+	border-radius: 0.1rem;
+	width: 7rem;
+	height: 1.6rem;
+	margin: 0 0.3rem;
+	overflow: hidden;
+}
+#exchange_num .form-list .items-box .J_Stock .input_text input {
+	border:none;
+	width: 100%;
+	height: 100%;
+	color:#333;
+	text-align: center;
+}
+#exchange_num .form-list .items-box .items-block {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	-webkit-align-items: center;
+	margin-bottom: 0.3rem;
+	height: 1.6rem;
+}
+#exchange_num .form-list .items-box .items-block .close-icon {
+	width: 1rem;
+	height: 1rem;
+	display: none;
+}
+#exchange_num .form-list .items-box .items-block .input_text {
+	border:1px #d8d8d8 solid;
+	border-radius: 0.1rem;
+	width: 7rem;
+	height: 1.6rem;
+	margin: 0 0.3rem;
+	overflow: hidden;
+}
+#exchange_num .form-list .items-box .items-block .input_text input {
+	border:none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color:#333;
+}
+#exchange_num .form-list .items-box .items-block .select_box {
+	width: 4.5rem;
+	height: 1.6rem;
+	position: relative;
+	border:1px #d8d8d8 solid;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	z-index: 1;
+}
+#exchange_num .form-list .items-box .items-block .select_box .select_input {
+    width: 3rem;
+    height: 1.6rem;
+    line-height: 1.6rem !important;
+	text-align: center;
+	color:#333;
+	border:none;
+	line-height: 2rem;
+    display: block;
+}
+#exchange_num .form-list .items-box .items-block .select_box .select_down {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 1.5rem;
+	height: 1.6rem;
+	border-left:1px #d8d8d8 solid;
+	z-index: 9;
+	/*border-radius: 0.5rem;*/
+	background-color: #f3f3f3;
+}
+#exchange_num .form-list .select_box .select_down:after {
+	content: "";
+	position: absolute;
+	top: 0.5rem;
+    left: 0.4rem;
+	width: 0;
+	height: 0;
+	font-size:0;
+	overflow: hidden;
+	border-left: 0.3rem solid transparent;
+	border-right: 0.3rem solid transparent;
+	border-top: 0.6rem #798186 solid;
+}
+#exchange_num .form-list .items-content p {
+	color:#b1b0b0;
+	line-height: 2rem;
+	padding-left: 1.2rem;
+}
+#exchange_num .form-list .items-content p .img-icon {
+	width: 0.7rem;
+	height: 2rem;
+	display: inline-block;
+	margin-right: 0.2rem;
+}
+#exchange_num .form-list .items-content p .img-icon img {
+	vertical-align: middle;
+}
+#exchange_num .form-list .form_btn {
+	margin: 0 0.5rem;
+	border-top:1px #f6f6f6 solid;
+	padding: 1.2rem 0;
+}
+#exchange_num .form-list .form_btn a {
+    margin-top: 2.5rem;
+    background-color: #fc5a28;
+    height: 2rem;
+    width: 70%;
+    display: block;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+#exchange_num .account h3 {
+	height: 3rem;
+	background-color: #f9f9f9;
+	color:#717171;
+	margin: 0;
+	line-height: 3rem;
+	text-indent: 0.7rem;
+	font-size: 0.8rem;
+	font-family: "黑体";
+}
+#exchange_num .account .account-list {
+	background: #fff;
+	padding-top: 1rem;
+}
+#exchange_num .account .account-list ul {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	margin: 0 0.5rem;
+}
+#exchange_num .account .account-list ul li {
+	width: 31%;
+	margin:0 1%;
+	margin-bottom: 1rem;
+}
+#exchange_num .account .account-list ul li .assount-img {
+	width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    left: 10%;
+}
+#exchange_num .account .account-list ul li .assount-img img {
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+#exchange_num .account .account-list ul li .assount-info {
+	width: 100%;
+	text-align: center;
+	color:#787878;
+	margin-top: 0.3rem;
+}
+#exchange_num .account .account-list ul li .assount-info span {
+	display: block;
+}
+.cn_father {
+	position: absolute;
+    height: 2.4rem;
+    bottom: 0;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #fff;
+    z-index: 9999;
+}
+.change_now {
+    width: 92%;
+    background-color: #fc6a3c;
+    color: #fff;
+    font-size: 0.75rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    box-shadow: 2px 2px 3px #bbbbbb;
+    margin-left: 4%;
+    
+}
+
+.empty {
+    height: 2.4rem;
+    background-color: #fff;
+}

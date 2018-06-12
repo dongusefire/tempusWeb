@@ -1,0 +1,50 @@
+.bar {
+    background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+    position: relative;
+}
+.bar h1 {
+    color: #fff;
+}
+.bar a img {
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+#notRelated .content ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+}
+#notRelated .content ul li {
+    margin-left: 2rem;
+    height: 3.65rem;
+    line-height: 3.65rem;
+    position: relative;
+}
+#notRelated .content ul li .aim-logo {
+    position: absolute;
+    left: -2.3rem;
+    top: 0.7rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+#notRelated .content ul li .aim-logo img {
+    width: 1.8rem;
+    border-radius: 50%;
+}
+.border_quarter {
+    position: relative;
+    height: 1px;
+}
+#notRelated .content ul div span.btn-gl {
+    float: right;
+    margin-right: 1rem;
+    border: 1px solid #dcdcdc;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 1.2rem;
+    padding: 0 0.6rem;
+    border-radius: 0.7rem;
+    color: #f56236;
+}

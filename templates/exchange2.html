@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>兑换</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/Swiper/dist/js/swiper.jquery.min.js" charset="utf-8"></script>
+	<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current clearfix" id="page-exchange">
+    <link rel="stylesheet" href="../public/Swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="../public/css/exchange2.css">
+        <header class="bar bar-nav">
+		  <span class="button button-link pull-right"><a href="/templates/my_list.html">我的挂单</a></span>
+		  <h1 class="title">积分挂单兑换</h1>
+		</header>
+        <div class="content">
+        	<div class="choice-box up">
+        		<div class="menu-box">
+	            	<div class="label">
+	            		<i></i>
+	            		<span>我有</span>
+	            	</div>
+	            	<div class="menu-list">
+	            		<i class="icon icon-left upLetter-left"></i>
+	            		<div class="menu-wraper">
+	            			<div class="swiper-container" id="upLetter">
+						        <div class="swiper-wrapper" data-type="letter"></div>
+						    </div>
+	            		</div>
+	            		<i class="icon icon-right upLetter-right"></i>
+	            	</div>
+	           </div>
+	           <div class="img-list">
+				   <div class="slide swiper-container" id="upSlide">
+					   <div class="swiper-wrapper slide-wrap" data-type="slide-html"></div>
+				   </div>
+				   <div class="marquee"></div>
+	           </div>
+        	</div>
+			<div class="section">
+				<div class="change_title">
+					推荐交换比例：
+                    <span class="change-you"></span>
+                    <span class="rate"></span>
+                    <span class="change-yao"></span>
+                    <i class="zline"><img src="../public/images/line-icon.png" alt="折线" /></i>
+				</div>
+				<div class="change_inps">
+                    <div class="input-box">
+                        <label><span class="change-you"></span>：</label>
+                        <input type="number" name="num" />
+                    </div>
+                    <span class="btn-swap"><img src="../public/images/swap-icon.png" alt=""></span>
+                    <div class="input-box">
+                        <label><span class="change-yao"></span>：</label>
+                        <input type="number" name="num" />
+                    </div>
+				</div>
+				<div class="change_btns">
+                    <a href="#" class="btn btn-reset">使用推荐比例</a>
+                    <a href="#" class="btn btn-submit">确认挂单</a>
+                </div>
+			</div>
+        	<div class="choice-box down">
+	           <div class="img-list">
+				   <div class="slide swiper-container" id="downSlide">
+					   <div class="swiper-wrapper slide-wrap" data-type="slide-html"></div>
+				    </div>
+				    <div class="marquee"></div>
+	           </div>
+	           <div class="menu-box">
+	            	<div class="label">
+	            		<i></i>
+	            		<span>我要</span>
+	            	</div>
+	            	<div class="menu-list">
+	            		<i class="icon icon-left downLetter-left"></i>
+	            		<div class="menu-wraper">
+	            			<div class="swiper-container" id="downLetter">
+						        <div class="swiper-wrapper" data-type="letter"></div>
+						    </div>
+	            		</div>
+	            		<i class="icon icon-right downLetter-right"></i>
+	            	</div>
+	           </div>
+        	</div>
+        </div>
+        <!--底部栏-->
+       	<nav class="bar bar-tab bar-footer">
+            <a class="tab-item external" href="/templates/wallet.html">
+                <i class="footer-icon icon-qb"></i>
+                <span class="tab-label">钱包</span>
+            </a>
+            <a class="tab-item external active" href="/templates/exchange.html">
+                <i class="footer-icon icon-dh"></i>
+                <span class="tab-label">挂单</span>
+            </a>
+            <a class="tab-item external" href="/project">
+                <i class="footer-icon icon-gy"></i>
+                <span class="tab-label">公益</span>
+            </a>
+            <a class="tab-item external" href="http://m.benefit.hnagroup.com">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label">商城</span>
+            </a>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>卡券</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" href="../public/css/public.css">
+<script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current" id="card">
+        <link rel="stylesheet" href="../public/css/cards.css">
+        <div class="search-box" style="width: 100%; height: 56px;background-color: #f3f3f3;position: absolute;top:0;z-index: 1000;">
+            <a href="/templates/searchPage.html" style="width: 80%;margin: auto;">
+            <div  style="width: 80%; margin:0 auto;height: 36px;border-radius: 3px;background-color: rgba(255,255,255,0.8);color:black;    BACKGROUND-IMAGE: url(/hnair/images/search_icon_01.png);BACKGROUND-REPEAT: no-repeat;  background-size: 20px 20px;  background-position: 10px 9px; padding-left: 35px; line-height: 36px; background-color: rgba(255,255,255,0.8);margin-top: 10px;">请输入卡券名称</div>
+            </a>
+        </div>
+        <div style="width: 100%; height: 40px;background-color: #fff;line-height: 40px; z-index: 999; overflow: visible; position: absolute; top:56px; border-bottom: 1px solid #dcdcdc;" id="hei" node-type="changeCardList" class="line">
+            <div style="width: 33.3%; float: left; text-align: center; position: relative;">
+              <span class="fa all_kinds">
+                 全部分类
+              </span>
+              <!-- 第一个list -->
+              <ul class="show show_first" node-type="type_list" node-data="0">
+              </ul>
+            </div>
+            <div style="width: 33.3%; float: left; text-align: center;">
+                <span  class="fa hole_city" action-type="region">
+                    地区
+                </span>
+                <!-- 第二个list -->
+                <div class="show show_second" node-type="regionList">
+                    <ul node-type="region_list" class="far" node-data="0" style="width:30%;float:left;height:100%;">
+                    </ul>
+                    <ul node-type="regionshow_list" class="erza" style="width:70%;float:left;overflow:scroll;height:100%;">
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 33.3%; float: left; text-align: center; position: relative;">
+                <span class="fa sort" style="border: none;">
+                    智能排序
+                </span>
+                <!-- 第三个list -->
+                <ul class="show show_third" action-type="order">
+                    <li><a action-data="0" href="javascript:void(0)">默认</a></li>
+                    <li><a action-data="1" href="javascript:void(0)">发布时间</a></li>
+                    <li><a action-data="2" href="javascript:void(0)">精品推荐</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content native-scroll" >
+          <div id="mask" class="mask"></div>
+           <div style="border-top: 1px solid #cfcfcf; background-color: #ffffff; margin-top: -1px;" node-type="cardList" page="0" type="0" city="1" is_load="0" order="0" >
+          </div>
+        </div>
+        <!--底部栏-->
+        <nav class="bar bar-tab bar-footer">
+            <a class="tab-item external" href="/templates/wallet.html">
+                <i class="footer-icon icon-qb"></i>
+                <span class="tab-label tab_bottom">钱包</span>
+            </a>
+            <a class="tab-item external" href="/templates/exchange.html">
+                <i class="footer-icon icon-dh"></i>
+                <span class="tab-label tab_bottom">兑换</span>
+            </a>
+            <a class="tab-item external" href="/templates/project/project.html">
+                <i class="footer-icon icon-gy"></i>
+                <span class="tab-label tab_bottom">公益</span>
+            </a>
+            <!-- <a class="tab-item external" href="/templates/market/market.html">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label tab_bottom">商城</span>
+            </a> -->
+            <a class="tab-item external active" href="/templates/cards.html">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label tab_bottom">卡券</span>
+            </a>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

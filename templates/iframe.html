@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>关联商家</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+	<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current clearfix">
+    	<link rel="stylesheet" href="../public/css/connect.css">
+        <header class="bar bar-nav">
+            <h1 class="title">关联</h1>
+            <a href="/templates/wallet.html" class="icon icon-left pull-left" style="color:#fff;"></a>
+        </header>
+        <div class="content">
+		<iframe width="100%"  src="https://wwwtest.tanglarewards.com/Account/PlatformLogin?userAccount=103&timestamp=1494929372&callback=http%253A%252F%252Fdemo.ecosysnet.com%252Fuser%252Fmanualrelationcallback%253FuserAccount%253D103%2526businessId%253D34%2526_callback%253DL3RlbXBsYXRlcy93YWxsZXQuaHRtbA%253D%253D&signature=DAA50fYlU9Ta%2Fz1rwYNxdCCKJz1pSLyDIEZMFd0D6qM%3D&initialWidth=360&childId=example" class="jump" id="jump" scrolling="0"></iframe>
+	
+            <!-- <object data="" class="jump"></object> -->
+        </div>
+    </div>
+<script>
+(function(){
+var  test = function(){
+	//var test1='<iframe width="100%"  src="https://wwwtest.tanglarewards.com/Account/PlatformLogin?userAccount=103&timestamp=1494929372&callback=http%253A%252F%252Fdemo.ecosysnet.com%252Fuser%252Fmanualrelationcallback%253FuserAccount%253D103%2526businessId%253D34%2526_callback%253DL3RlbXBsYXRlcy93YWxsZXQuaHRtbA%253D%253D&signature=DAA50fYlU9Ta%2Fz1rwYNxdCCKJz1pSLyDIEZMFd0D6qM%3D&initialWidth=360&childId=example" class="jump" id="jump" scrolling="0"></iframe>';
+	//$('.content').html(test1);
+	$('#jump').on('load',function(){
+		console.log($(this).find("body").html());
+		console.log($("#jump").contents().find("body").html());
+	})
+	var head=document.head || document.getElementsByTagName('head')[0];
+	var meta = document.createElement('meta');
+	meta.name = "viewport";
+	meta.content="width=640, user-scalable=no, target-densitydpi=device-dpi";
+	head.appendChild(meta);
+}
+
+/**
+alert(1);
+var head=document.head || document.getElementsByTagName('head')[0];
+var meta = document.createElement('meta');
+meta.name = "viewport";
+meta.content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no";
+head.appendChild(meta);
+}
+**/
+setTimeout(test,100);
+
+})();
+
+</script>
+</body>
+</html>

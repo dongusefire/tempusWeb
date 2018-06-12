@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>绑定手机号</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+	<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current clearfix" id="bind_phoneNumber">
+    <link rel="stylesheet" href="../public/css/bind_phoneNumber.css">
+        <header class="bar bar-nav">
+            <h1 class="title" bindStatus="0">绑定手机号</h1>
+            <a href="/templates/wallet.html?s=0" class="icon icon-left pull-left" style="color:#fff;"></a>
+        </header>
+        <div class="content">
+            <div class="phoneNumber thesame">
+                <label>手机号</label>
+                <input id="number" type="tel" name="phoneNumber" placeholder="请输入手机号">
+            </div>
+            <div class="verify thesame">
+                <label>验证码</label>
+                <input id="smsCaptcha" type="text" name="verification_code" placeholder="请输入验证码">
+                <button id="btn" class="get">获取验证码</button>
+            </div>
+            <button id="submit" type="submit" class="confirm classinput" style="background-color: rgb(252, 90, 40);">确认</button>
+        </div>
+    </div>
+</body>
+</html>

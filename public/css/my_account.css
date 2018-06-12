@@ -1,0 +1,52 @@
+.bar {
+    background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+    position: relative;
+}
+.bar h1 {
+    color: #fff;
+}
+.bar a img {
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+#my_account .content ul {
+	padding-left: 1rem;
+}
+#my_account .content ul li {
+    margin-left: 2rem;
+    height: 3.65rem;
+    border-bottom: 1px solid rgba(202,185,185,0.27);
+    position: relative;
+}
+#my_account .content .b_logo {
+    position: absolute;
+    top: 0.9rem;
+    left: -2.3rem;
+}
+#my_account .content .b_logo img {
+    width: 1.8rem;
+    border-radius: 50%;
+}
+#my_account .content div:not(.estimate) {
+    float: left;
+    height: 100%;
+    padding-top: 0.6rem;
+}
+#my_account .content div:not(.estimate) .balance {
+    color: #b1b0b0;
+    margin-top: 0.3rem;
+}
+#my_account .content .estimate {
+    position: absolute;
+    right: 1.4rem;
+    height: 100%;
+    line-height: 3.1rem;
+}
+#my_account .content .estimate span {
+    color: #ff4342;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    margin-right: 0.08rem;
+}

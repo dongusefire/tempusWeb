@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>卡券详情</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" href="../public/css/public.css">
+<link rel="stylesheet" href="../public/scripts/layer/skin/default/layer.css">
+<script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current" id="cardshow">
+        <link rel="stylesheet" href="../public/css/cardshow.css">
+        <div class="content native-scroll" style="height: auto; top: 0px; bottom: 0px;" node-type="hole_page">
+        </div>
+    </div>
+
+
+  <div id="submitAckDiv" style="display:none;position:fixed;left:0px;z-index:2000000;bottom: 0px;width:100%;">
+    <div style="width:100%;background-color:#fff;">
+        <div style="wdith:100%;background-color:#fff;height:80px;padding:0px 10px;">
+            <div style="float:left;width:90px;height:80px;padding:10px 10px 10px 0;">
+                <img src="" style="width:80px;height:60px;">
+            </div>
+            <div style="overflow:hidden;">
+                <div style="width:100%;height:80px;">
+                    <div style="float:none;width:80%;font-size:17px;top:20px;" node-type="showName"></div>
+                    <span style="float: right; font-size: 14px;">数量
+                        &nbsp;
+                        <span id="buyNumber" style="color:#ce3f40;"></span></span>
+                    <div style="float:none;text-align:left;width:100%;font-size:14px;top:8px;padding-right:20px;">
+                        <span style=" color:#d8505c;" node-type="buy"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ackBuyDiv" style="width: 100%; background-color: rgb(255, 255, 255); overflow: hidden;">
+        <div style="width:100%;height:50px;text-align:center;padding-top:17px;">
+            <div style="display:inline;top:-6px;font-size:13px;" id="use_coin">使用0.5DSA<span id="scoreOrg" style="float:none;color:#e32c2c;"></span>积分支付&nbsp;&nbsp;</div>
+        </div>
+        <div style="width:100%;height:66px;border-top:solid 1px #ccc;">
+            <div style="width:95%;margin:0px auto;text-align:center;margin-top:5px;line-height:56px;border-radius:8px;background-color:#e32c2c;color:#fff;font-size:16px;" id="confirm_buy_first">确认购买</div>
+        </div>
+    </div>
+    
+    <div id="selScoreOrgDiv" style="width: 100%; display: none;">
+        <div id="scoreSelect" style="display:none;left:0px;width:100%;background-color:#fff;z-index:2;border-bottom:solid 1px #ccc;">
+            <div style="width:100%;text-align:center;font-size:16px;line-height:40px;">
+                选择积分支付方式
+            </div>
+        </div>
+        <div id="sedScoreYYY" style="width:100%;overflow-y:auto;">
+            <div style="width:100%;height:66px;border-top:solid 0px #ccc;background-color: #fff;">
+            <div style="width:95%;margin:0px auto;text-align:center;margin-top:5px;line-height:56px;border-radius:8px;background-color:#e32c2c;color:#fff;font-size:16px;" id="confirm_buy_second">确认购买</div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="submitMask" style="display:none;position: absolute;width:100%;margin:0px;top:0px;left:0px;z-index:1000000;background-color:#898989; -moz-opacity: 0.7; opacity:.70;filter: alpha(opacity=70);height: 100%;"></div>
+
+  <div style="position: fixed; bottom: 0px; width: 100%; line-height: 40px; background-color: rgb(227, 44, 44); height: 60px; border-top: 1px solid rgb(218, 217, 217);z-index: 9999;" id="submit_btn">
+  <div style="width:66%;height: 60px;line-height: 60px;padding-left: 16px;font-size: 14px;float: left;background-color: #ffffff;"><span style="color:#cf271a;" id="hole_price">500</span><span style="font-size: 12px;color: #ff3838;"> 小二租车积分</span></div>
+  <button style="float: right; width: 34%;height: 60px;font-size: 16px;color:#ffffff;background-color: #cf271a; font-family:'Microsoft YaHei';border:none;" id="submit_btn">立即抢购</button>
+  </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

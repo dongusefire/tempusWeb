@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交换指数</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+    <script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current clearfix" id="page-exchange-details">
+
+	    <link rel="stylesheet" href="../public/css/exchange_details.css" />
+        <header class="bar bar-nav">
+            <h1 class="title">交换指数</h1>
+            <a href="#" class="icon icon-left pull-left back" style="color:#fff;"></a>
+        </header>
+        <div class="content infinite-scroll infinite-scroll-bottom"  data-distance="100">
+            <div class="valuation">
+                <span>最新估值</span>
+                <img src="../public/images/question_mark.png">
+            </div>
+            <div class="specific">
+                <div class="f_left left">
+                <!--施工中-->
+                    <span class="inside side">
+                    <span node-type="value" class="top"></span> 
+                    <span node-type="name" class="bottom switch_btn radio-unit" radio-unit="0" id="0">滴币</span>
+                    </span>
+                    <span class='father'>
+                    <img src="../public/images/exchange.png">
+                    <span class='son'>
+                        <span node-type="ratio" class="center"></span>
+                    </span>
+                    </span>
+                <!-- 施工中 -->
+                    <span class="outside side">
+                        <span node-type="targetValue"  class="top"></span>
+                        <span node-type="targetName" class="fu bottom switch_btn radio-unit" radio-unit="0">福币</span>
+                    </span>
+                    <div class="name">
+                        <!-- <span node-type="name">滴币</span> -->
+                        <!-- <span node-type="targetName" class="fu">福币</span> -->
+                    </div>
+                </div>
+                <div class="right clearfix">
+                    相对<span node-type="targetName">福币</span>今日涨幅
+                    <br>
+                    <span class='withColor' node-type="extentData">+0.02<img src="../public/images/up_arrow.png"></span><span class="f_right withColor" node-type="extent"><img src="../public/images/up_arrow.png"></span>
+                </div>
+            </div>
+            <div class="warn">
+                <img src="../public/images/prompt.png">
+                资产估值仅供参考，请以实际成交为准
+            </div>
+
+            <!-- 折线图部分 -->
+            <div class="scheme">
+            <div id="container" style="width: 95%; height: 200px; margin: 0 auto"></div>
+
+    </body>
+                <div class="all_time">
+                    <ul class="clearfix" action-type="changeTimeData">
+                        <li class="active" node-data="minute"><a href="#">当前</a></li>
+                        <li node-data="day"><a href="#">日线</a></li>
+                        <li node-data="week"><a href="#">周线</a></li>
+                        <li node-data="month"><a href="#">月线</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 兑换 -->
+            <div class="conversion">
+                <div class='head'>
+                    <ul class="clearfix">
+                        <li>换出类型</li>
+                        <li>换出数量</li>
+                        <li>换入类型</li>
+                        <li>换入数量</li>
+                        <li>挂单日期</li>
+                    </ul>
+                </div>
+                <div class='body'>
+                	<div data-type="apimyexchangelist"></div>
+                </div>
+                <!-- 加载提示符 -->
+		          <div class="infinite-scroll-preloader">
+		              <div class="preloader"></div>
+		          </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class='change_now' id="change_now">
+        <div><a href="#" class="external" _href="/templates/exchange.html">立即兑换</a></div>
+    </div>
+</div>
+</body>
+</html>

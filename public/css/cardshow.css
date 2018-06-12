@@ -1,0 +1,106 @@
+.content {
+  top:0 !important;
+}
+.text {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.none{
+  background-color:red;
+  -webkit-line-clamp: none;
+}
+.middle {
+  width:100%;
+  height:100px;
+  top:50%;
+  text-align:center;
+}
+.buy {
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+}
+.buy > .first {
+  /*width: 22%;*/
+  margin-left: 4%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 64px;
+  color:#ff3838;
+}
+.buy > .first > span {
+  font-size: 22px;
+}
+.buy > .second {
+  margin-left: 6%;
+}
+.buy > button {
+  float: right;
+  margin-right: 1.8%;
+  width: 24%;
+  height: 49%;
+  margin-top:19px;
+  border-radius: 5px;
+  background-color: #ffa312;
+  font-family: 'Microsoft YaHei';
+  color:#ffffff;
+  font-size: 14px;
+}
+button.bro {
+  margin-right: 2.8%;
+  background-color: #cf271a;
+}
+.details {
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #dcdcdc;
+  margin-bottom: 60px;
+}
+p {
+  font-size: 15px;
+  line-height: 26px;
+}
+.mustKnow {
+  font-size: 16px;
+  color:#333333;
+  height:36px;
+  line-height: 36px;
+  margin-top: 6px;
+}
+.store {
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  height: 60px;
+  line-height: 60px;
+  text-indent: 15px;
+  font-size: 14px;
+  color:#333333;
+}
+.radio-two {
+  background-position: 0px 9px !important;
+}
+
+// #cardshow #submitAckDiv {
+// 	-webkit-transition: -webkit-transform 0.5s;
+// 	-moz-transition: -moz-transform 0.5s;
+// 	-ms-transition: -ms-transform 0.5s;
+// 	transition: transform 0.5s;
+// 	-webkit-transform:translate(0,100%,0);
+// 	-moz-transform:translate(0,100%,0);
+// 	-o-transform:translate(0,100%,0);
+// 	-ms-transform:translate(0,100%,0);
+// 	transform:translate(0,100%,0);
+// }
+// #cardshow #submitAckDiv.show {
+// 	-webkit-transform:translate(0,0,0);
+// 	-moz-transform:translate(0,0,0);
+// 	-o-transform:translate(0,0,0);
+// 	-ms-transform:translate(0,0,0);
+// 	transform:translate(0,0,0);
+// }

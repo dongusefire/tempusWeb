@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>提交订单</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" type="text/css" href="../../public/css/public.css">
+<script type="text/javascript" src="../../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+<body>
+<div class="page-group">
+	<div class="page page-current" id="submitOrders">
+		<link href="../../public/market/styles/style.css" rel="stylesheet" type="text/css">
+		<header class="bar bar-nav">
+		  <a class="icon icon-left pull-left back" style="color:#fff;"></a>
+		  <h1 class="title">提交订单</h1>
+		</header>
+		<div class="content">
+			<div class="item-list">
+				<div class="item-box">
+					<div style="width:100%;height:40px;background-color:#fff;border-bottom:solid 1px #ccc;">
+				        <div style="float:left;margin-left:10px; margin-right:5px;height:40px;"><img src="/hnair/images/ksly_logo_01.png" width="35" height="35" style="margin-top:2.5px; width:35px;height:35px;" alt="icon"></div>
+				        <div style="float:left;top:0px;font-size:16px;line-height:40px;">凯撒旅游</div>
+				    </div>
+				    <div style="width:100%;background-color:#fff;height:80px;padding:0px 10px;" class="clearfix">
+				        <div style="float:left;width:60px;height:80px;margin-right:10px;padding:10px 0px;">
+				            <img src="/hnair/images/dingdan_img_02.png" style="width:100%;height:60px;border-radius:0px;">
+				        </div>
+				        <div style="float:left;height:80px;">
+				            <div style="float:none;font-size:17px;margin-top:8px;">桂林旅游套票</div>
+				            <div style="float:left;margin-top:16px;font-size:15px;">
+				                <span style="color:#ce3f40;">15890</span>&nbsp;&nbsp;<span>福利汇</span>积分
+				            </div>
+				        </div>
+				    </div>
+				    <div style="float:none;width:100%;height:10px;"></div>
+				    <div style="float:none;width:100%;line-height:40px;padding:0px 10px;background-color:#fff;" class="clearfix">
+				        <div style="float:left;font-size:16px;">数量</div>
+				        <div style="float:right;border:solid 1px #ccc;border-radius:4px;top:8.5px; position: relative;">
+				            <div class="jian" style="float:left;width:23px;height:23px;"><img src="/hnair/images/jian_icon_01.png" style="width:14px;height:3px;margin-left:4px;margin-top:9.5px; display: block;"></div>
+				            <div class="number" style="float:left;width:30px;height:23px;border-left:solid 1px #ccc;border-right:solid 1px #ccc;"><input class="inputNum" score="15890" type="number" style="border:0px;width:100%;height:23px;display:block;line-height:23px;font-size:16px;text-align:center;color:#ce3f40;" value="1"></div>
+				            <div class="jia" style="float:left;width:23px;height:23px;"><img src="/hnair/images/jia_icon_01.png" style="width:14px;height:14px;display:block;margin-top:4px;margin-left:4px;"></div>
+				        </div>
+				    </div>
+				    <div style="float:none;width:100%;padding:0px 10px;background-color:#fff;border-top:solid 1px #f6f6f6;" class="clearfix">
+				        <div style="float:left;line-height:40px;font-size:16px;">商品金额</div>
+				        <div style="float:right;line-height:40px;font-size:15px;"><span style="color:#ce3f40;">15890</span>&nbsp;&nbsp;福利汇积分</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="bar bar-tab bar-footer">
+		    <div id="submit_btn" style="float:right;text-align:center;background-color:#ff674d;color:#fff;font-size:16px;width:150px;line-height:2.5rem;">提交订单</div>
+		    <div style="overflow:hidden;">
+		        <div style="width:100%;text-align:right;font-size:16px;padding:0px 15px;">
+		            <div style="float:left;line-height:2.5rem;"><span>福利汇</span>积分</div>
+		            <div style="float:right;line-height:2.5rem;"><span id="sumScore" style="color:#ce3f40;">15890</span></div>
+		        </div>
+		    </div>
+		</div>
+		<!-- 从这里以后就是遮罩层模块 -->
+		<div id="submitAckDiv">
+		    <div style="width:100%;background-color:#fff;">
+		        <div style="width:100%;background-color:#fff;height:80px;padding:0px 10px;">
+		            <div style="float:left;width:60px;height:80px;margin-right:10px;padding:10px 0px;">
+		                <img src="/hnair/images/dingdan_img_02.png" style="width:100%;height:60px;border-radius:0px;">
+		            </div>
+		            <div style="overflow:hidden;">
+		                <div style="width:100%;height:80px;">
+		                    <div style="float:none;width:100%;font-size:17px;top:10px;">桂林旅游套票</div>
+		                    <div style="float:none;text-align:right;width:100%;font-size:14px;top:35px;padding-right:20px;">购买数量
+		                        &nbsp;&nbsp;<span id="buyNumber" style="color:#ce3f40;">1</span>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <div style="width:100%;height:10px;"></div>
+		    <div id="ackBuyDiv" style="width: 100%; background-color: rgb(255, 255, 255); overflow: hidden;">
+		        <div style="width:100%;height:50px;text-align:center;padding-top:17px;">
+		            <div style="display:inline-block;margin-right:0px;">
+		                <img id="cursedorgicon" src="/hnair/images/tijiaodingdan_fulihui_logo_01.png" width="20" height="20" style="border-radius:4px;border:solid 1px #cccccc; width: 20px; height: 20px;" alt="icon">
+		            </div>
+		            <div style="display:inline;top:-6px;font-size:13px; position: relative;">使用<span id="scoreOrg" style="float:none;color:#e32c2c;">福利汇</span>积分支付&nbsp;&nbsp;<span class="replace" style="font-size:16px;color:#e32c2c;">更换</span></div>
+		        </div>
+		        <div style="width:100%;height:50px;border-top:solid 1px #ccc;">
+		            <div class="btn-create" style="width:95%;margin:0px auto;text-align:center;margin-top:5px;line-height:35px;border-radius:8px;background-color:#e32c2c;color:#fff;font-size:16px;">确认支付</div>
+		        </div>
+		    </div>
+		    
+		    <div id="selScoreOrgDiv" style="width: 100%; display: none;">
+		        <div id="scoreSelect" style="display:none;left:0px;width:100%;background-color:#fff;z-index:2;border-bottom:solid 1px #ccc;">
+		            <div style="width:100%;text-align:center;font-size:16px;line-height:40px;">
+		                选择积分支付方式
+		            </div>
+		        </div>
+		        <div id="sedScoreYYY" style="width:100%;height:167px;overflow-y:auto;" class="clearfix">
+		            <div style="width:100%;height:167px;background-color:#fff;" class="clearfix">
+		                <div style="width:100%;height:35px;text-align:left;margin-top:10px;padding:0px 20px;margin-bottom:10px;display:inline-block;" class="clearfix select-item" data-id="1">
+		                    <div style="float:left;">
+		                        <img id="orglisticon-1" src="/hnair/images/tijiaodingdan_fulihui_logo_01.png" width="35" height="35" style="border-radius:8px;border:solid 1px #cccccc;width:35px;height:35px;">
+		                    </div>
+		                    <div style="overflow:hidden;">
+		                        <div style="width:100%;line-height:35px;font-size:16px;">
+		                            <div style="float:left;line-height:35px;padding-left:5px;">
+		                              <span id="scoreOrgName-1">福利汇</span>积分
+		                            </div>
+		                            <div style="float:right;text-align:right;line-height:35px;">
+		                                <span id="score-1" style="color:#ce3f40;">850</span>&nbsp;积分
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div style="width:100%;border-top:solid 1px #ccc;"></div>
+		                <div style="width:100%;height:35px;text-align:left;margin-top:10px;padding:0px 20px;margin-bottom:10px;display:inline-block;" class="clearfix select-item" data-id="2">
+		                    <div style="float:left;">
+		                        <img id="orglisticon-2" src="/hnair/images/tijiaodingdan_kaola_logo_01.png" width="35" height="35" style="border-radius:8px;border:solid 1px #cccccc;width:35px;height:35px;">
+		                    </div>
+		                    <div style="overflow:hidden;">
+		                        <div style="width:100%;line-height:35px;font-size:16px;">
+		                            <div style="float:left;line-height:35px;padding-left:5px;">
+		                              <span id="scoreOrgName-2">考拉海淘</span>积分
+		                            </div>
+		                            <div style="float:right;text-align:right;line-height:35px;">
+		                                <span id="score-2" style="color:#ce3f40;">1450</span>&nbsp;积分
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div style="width:100%;border-top:solid 1px #ccc;"></div>
+		                <div style="width:100%;height:35px;text-align:left;margin-top:10px;padding:0px 20px;margin-bottom:10px;display:inline-block;" class="clearfix select-item" data-id="3">
+		                    <div style="float:left;">
+		                        <img id="orglisticon-3" src="/hnair/images/tijiaodingdan_haihang_logo_01.png" width="35" height="35" style="border-radius:8px;border:solid 1px #cccccc;width:35px;height:35px;">
+		                    </div>
+		                    <div style="overflow:hidden;">
+		                        <div style="width:100%;line-height:35px;font-size:16px;">
+		                            <div style="float:left;line-height:35px;padding-left:5px;">
+		                                <span id="scoreOrgName-3">海航</span>积分
+		                            </div>
+		                            <div style="float:right;text-align:right;line-height:35px;">
+		                                <span id="score-3" style="color:#ce3f40;">15890</span>&nbsp;积分
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div style="width:100%;border-top:solid 1px #ccc;"></div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div id="submitMask"></div>
+	</div>
+</div>
+</body>
+</html>

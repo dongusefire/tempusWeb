@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的积分</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+	<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current clearfix" id="page-exchange">
+        <div class="panel-overlay"></div>
+
+    <link rel="stylesheet" href="../public/css/exchange.css">
+        <div class="header user bar clearfix">
+            <a class="user-portrait pull-left open-panel" data-panel='#qb-lpanel'><img src="../public/images/user_icon.png"></a>
+            <span class="detail">
+            	<a href="/templates/my_list.html">我的挂单</a>
+            </span>
+            <div class="buttons-row" style="margin:0 auto;width:40%;">
+                <span style="width: 100%;text-align: center;font-size: 0.9rem;line-height: 1rem;margin-top: 0.4rem;">积分</span>
+                <!-- <a href="#tab1" class="tab-link active button">积分</a> -->
+                <!-- <a href="#tab2" class="tab-link button">卡券</a> -->
+            </div>
+            <div class="clearfix">
+                <div class="left">
+                    <div class="title_">账户总资产估值</div>
+                    <div id="value"  class="content_" > 
+                        <div style="position: relative; height: 2rem;">
+                            <span data-type="asset"></span>
+                            <span class="unit radio-unit" >福币</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="right clearfix">
+                    <div class="d_right">
+                        <div class="title_">今日涨幅</div>
+                        <div class="content_" style="position: relative;height: 1.3rem;">
+                            <div data-type="increase" ></div>
+                            <!--<span class="arrow_up"></span>-->
+                            <span id="zf"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content native-scroll clearfix">
+            <div class="explain clearfix">
+                <div class="left">积分类型
+                </div>
+                <div class="right clearfix">
+                    <div>
+                        <span class="d_left">当前市值</span>
+                        <span class="d_right"><span class="radio-unit-nochange">单位</span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="all_list" data-type="getIntegralvaluelist"></div>
+        </div>
+        <!--底部栏-->
+       <nav class="bar bar-tab bar-footer">
+            <a class="tab-item external" href="/templates/wallet.html">
+                <i class="footer-icon icon-qb"></i>
+                <span class="tab-label">钱包</span>
+            </a>
+            <a class="tab-item external active" href="/templates/exchange2.html">
+                <i class="footer-icon icon-dh"></i>
+                <span class="tab-label">兑换</span>
+            </a>
+            <a class="tab-item external" href="/project">
+                <i class="footer-icon icon-gy"></i>
+                <span class="tab-label">公益</span>
+            </a>
+            <a class="tab-item external" href="http://m.benefit.hnagroup.com">
+                <i class="footer-icon icon-shch"></i>
+                <span class="tab-label">商城</span>
+            </a>
+        </nav>
+    </div>
+	<div class="panel panel-left panel-reveal  theme-white" id="qb-lpanel2">
+	    <div class="content-block">
+	        <header class="header">
+	            <div>
+	                <img src="../public/images/user_icon.png" alt="" class="close-panel">
+	                <br>
+	                <span class="user_title"></span>
+	            </div>
+	        </header>
+	        <div class="body">
+	            <a href="/templates/modify_name.html" class="external"><img src="../public/images/nicheng_logo.png"><span>昵称设置</span></a>
+	            <a href="/templates/modify_password.html" class="external"><img src="../public/images/mima_logo.png"><span>密码修改</span></a>
+	            <a href="/templates/bind_phoneNumber.html" class="external"><img src="../public/images/bind_logo.png"><span>绑定手机号</span></a>
+	            <a href="#" class="helpSlide"><img style="width:.7rem;" src="../public/images/bzh.png"><span>帮助</span></a>
+	        </div>
+	    </div>
+	    <div class="list-block">
+	        <!-- .... -->
+	    </div>
+	</div>
+</div>
+</body>
+</html>

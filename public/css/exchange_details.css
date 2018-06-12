@@ -1,0 +1,238 @@
+.f_right {
+	float: right;
+}
+.f_left {
+	float: left;
+}
+.bar {
+	background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+	position: relative;
+}
+.bar h1 {
+	color:#fff;
+}
+.bar a {
+	position: absolute;
+	width: 3rem;
+}
+.bar a img {
+	width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+.valuation {
+	height: 2rem;
+	line-height: 2rem;
+	color:#717171;
+}
+.valuation img {
+	width: 0.6rem;
+}
+.valuation > span {
+	padding-left: 1rem;
+	font-size: 0.7rem;
+}
+/*内容部分*/
+.content .specific {
+	height: 5rem;
+}
+.content .specific .left {
+	padding-left: 0.7rem;
+	height: 5rem;
+}
+.content .specific .left img {
+	width: 2.4rem;
+}
+.content .specific .left span{
+	/*height: 6rem;*/
+	display: inline-block;
+	font-size: 1.5rem;
+}
+.content .specific .left .father {
+	position: relative;
+	bottom:2.2rem;
+	width: 2.6rem;
+	height: 2.2rem;
+}
+.content .specific .left .father .center {
+	text-align: center;
+	width: 2.4rem;
+}
+.content .specific .left .son {
+	position: absolute;
+	font-size: 0.6rem;
+	top:0.2rem;
+	left: 0;
+	color:#9a9a9a;
+}
+.content .specific .left .son span {
+	font-size: 0.6rem;
+}
+.content .specific .left .side {
+	height: 5rem;
+	text-align: center;
+}
+.content .specific .left .side .top {
+	display: block;
+	height: 2.2rem;
+}
+.content .specific .left .side .bottom {
+	font-size: 0.7rem;
+}
+.content .specific .left .side .switch_btn {
+	border:1px solid #dcdcdc;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	border-radius: 5px;
+}
+.content .specific .left .name span{
+	font-size: 0.7rem;
+}
+.content .specific .left .name {
+	padding-left: 0.3rem;
+	margin-top: 0.8rem;
+	color:#9a9a9a;
+}
+.content .specific .left .name .fu {
+	/*margin-left: 4rem;*/
+}
+.content .specific .right {
+	float: right;
+	padding-right: 0.8rem;
+	margin-top: 0.2rem;
+	font-size: 0.6rem;
+}
+.content .specific .right span.withColor {
+	color:#ff5f28;
+}
+.content .specific .right .withColor img {
+	width: 0.5rem;
+} 
+.content .warn {
+	background-color: #f9f9f9;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-indent: 1rem;
+	color: #787878;
+	border-top: 1px solid #f6f6f6;
+	border-bottom: 1px solid #f6f6f6;
+	vertical-align: middle;
+	font-size: 0.7rem;
+}
+.content .warn img {
+	width: 0.65rem;
+}
+.content .scheme ._title {
+	height: 1.5rem;
+	text-indent: 1rem;
+	line-height: 1.8rem;
+	color:#787878;
+	font-size: 0.7rem;
+}
+.content .scheme .echarts {
+	height: 8rem;
+	width: 90%;
+	margin: 0 auto;
+}
+.content .scheme .all_time {
+	padding-bottom: 0.6rem;
+}
+.content .scheme .all_time ul {
+	width: 88%;
+	border:1px solid #d7d7d7;
+	padding: 0;
+	margin:0 auto;
+	margin-top: 0.6rem;
+	border-radius: 1px;
+	background-color: #efefef;
+	font-size: 0.7rem;
+}
+.content .scheme .all_time ul li{
+	cursor: pointer;
+	float: left;
+	list-style: none;
+	width: 25%;
+	text-align: center;
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+.content .scheme .all_time .active {
+	background-color: #fff;
+	color:#fd5a3f;
+}
+.content .conversion {
+	margin-bottom: 2.4rem;
+}
+.content .conversion .head {
+	background-color: #f9f9f9;
+}
+.content .conversion .body {
+	height: 200px;
+	overflow: scroll;
+}
+.content .conversion .body ul {
+	padding: 0;
+	margin:0 auto;
+	height: 2rem;
+	width: 96%;
+}
+
+.content .conversion .head ul li {
+	float: left;
+	list-style: none;
+	width: 20%;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+	color:#a9acb1;
+	font-size: 0.7rem;
+}
+
+.content .conversion .body ul {
+	padding: 0;
+	margin:0 auto;
+	height: 2rem;
+	width: 96%;
+	border-bottom: 1px dashed #f3f3f3;
+}
+.content .conversion .body ul li {
+	float: left;
+	list-style: none;
+	width: 20%;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+	color:#a9acb1;
+	font-size: 0.6rem;
+	color:#3b4451;
+	overflow:hidden;
+}
+.change_now div {
+	margin:0 auto;
+	background: url('../images/change_now.png') no-repeat center;
+	width: 90%;
+	height: 2rem;
+	text-align: center;
+}
+.change_now div a {
+	color:#fff;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.change_now {
+	position: fixed;
+	height: 2.4rem;
+	bottom: 0;
+	width: 100%;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	color:#fff;
+	background-color: #fff;
+	z-index: 9999;
+}
+/*图表上的时间*/
+.highcharts-title {
+	font-size: 0.7rem !important;
+}

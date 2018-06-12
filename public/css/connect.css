@@ -1,0 +1,12 @@
+.bar {
+   	background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+}
+.bar h1 {
+    color: #fff;
+}
+.bar a img {
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}

@@ -1,0 +1,93 @@
+li{
+  list-style:none;
+  margin-bottom:10px;
+}
+img {
+  vertical-align: middle;
+  display: block;
+}
+.head {
+  height:15px;
+  background-color:#c12101;
+  float:left;
+  margin-left:10px;
+  width: 3px;
+  margin-right:5px;
+  color:#000;
+}
+
+.node {
+  width:100%;
+  padding:10px 18px;
+  padding-right:20px;
+  font-size:13px;
+}
+.node1 img{
+  width:100%;
+}
+#bg{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.7;
+  opacity:.70;
+  filter: alpha(opacity=70);
+}
+#bg_loading{
+  position: fixed;
+  z-index: 2500;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFF;
+  z-index: 99999999;
+  display: none;
+  filter: alpha(opacity=70);
+}
+#bg_loading div{
+  position: fixed;
+  z-index: 99999999;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(/hnair/images/status.gif);
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -125px 0 0 -125px;
+}
+.content {
+  background: #f5f5f5;
+}
+div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+ol > li:last-child, ul > li:last-child {
+    margin-bottom: 0px;
+}
+.button {
+  border:none;
+  display: inline-block;
+  padding: 10px 20px;
+  height: auto;
+}
+.button-red {
+    background-color: #c0392b;
+    color: #FFFFFF;
+}
+#cursedorgicon {
+  width: 20px;
+  height: 20px;
+}
+.hideScoreSelect {
+  width: 15px;
+  height: 15px;
+}

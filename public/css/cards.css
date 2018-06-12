@@ -1,0 +1,117 @@
+body{
+    background-color:#f3f3f3;
+}
+#l-rectangle {
+   border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.18);
+  position: absolute;
+  left: 20px;
+  top: 523px;
+  width: 710px;
+  height: 240px;
+  z-index: 26;
+}
+input{color:#6c6764;}
+input::-webkit-input-placeholder{color:#6c6764;}
+.mask {
+    position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;     
+    z-index: 800; left: 0px;     
+    opacity:0.5; -moz-opacity:0.5;  
+    height: 8rem;   
+}
+.show {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  // margin-top: 7px;
+  display: none;
+  left:0px;
+  top:96px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.show li {
+    list-style: none;
+    margin:0;
+    height: 40px;
+    line-height: 40px;
+    padding-left:15px;
+}
+.show li a {
+  display:block;
+}
+/*------------------------与animate相关的类-------------------------*/
+.show_first {
+  // display: none;
+  height: 0;
+  transition: height 0.5s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+}
+.show_first.active{
+  height: 40%;
+  max-height:40%;
+  overflow: scroll;
+  display:block;
+}
+.show_second {
+  // display: none;
+  transition: height 0.5s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+}
+.show_second.active {
+  height: 40%;
+  display:block;
+}
+.show_third {
+  // display:none;
+  overflow: scroll;
+  transition: height 0.5s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+}
+.show_third.active {
+  height: 120px;
+  display:block;
+}
+/*------------------------与animate相关的类-------------------------*/
+.he {
+   display: block;
+}
+.no {
+  display: none;
+}
+.fa {
+  display: inline-block; width: 100%; height: 26px; line-height: 30px; margin-top: 7px;border-right:1px solid #cfcfcf;
+  font-family: 'Microsoft YaHei';
+  font-size: 13px;
+}
+.selected {
+  border-bottom: 1px solid blue;
+}
+.border_quarter {
+    position: relative;
+    height: 1px;
+
+}
+.border_quarter:before {
+   content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-bottom: 1px solid #dcdcdc;
+  transform-origin: 0 0;
+  transform: scale(0.5, 0.5);
+  box-sizing: border-box;
+}
+.he {
+margin-left: 15px;
+}
+.effect{
+}
+.effect a {
+color:#00adff !important;
+}

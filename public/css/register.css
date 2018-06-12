@@ -1,0 +1,161 @@
+body {
+background-color: #ffffff;
+margin:0;
+padding:0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+header.bar {
+/*background-color: #394351;*/
+background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+}
+header.bar a.icon {
+color: #fff;
+}
+header.bar .title {
+color: #fff;
+}
+#header {
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #bbb;
+    background-color: #f9f9f9;
+}
+
+.page {
+    /*padding: 0 10px;*/
+    height: 100%;
+    /*margin-top: 2.2rem;*/
+    background-color: #f9f9f9;
+}
+.page > .wrap {
+    margin:0 auto;
+}
+.page > .wrap > .input-container {
+    background-color: #f9f9f9;
+}
+.page .wrap {
+    margin:0 auto;
+}
+.page .wrap > .tab > .input-container {
+    /*margin-top:15px;*/
+    /*border-bottom: 1px solid #dcdcdc;*/
+    margin-top: 0.7rem;
+    background-color: #fff;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    text-indent: 0.6rem;
+    position: relative;
+}
+.page > .wrap > .input-container > input {
+    width:100%;
+    text-indent: 8px;
+    box-sizing: border-box;
+}
+
+label {
+        font-family: 'Microsoft YaHei';
+        font-size: 20px;
+}
+input {
+        font-family: 'Microsoft YaHei';
+        font-size: 18px;
+        text-indent: 10px;
+        outline: none;
+        border:none;
+        height: 2.6rem;
+        font-size: 0.7rem;
+}
+.qi {
+        text-align: justify;
+        text-justify:distribute-all-lines;
+        text-align-last: justify;
+        text-indent:10px;
+        width: 5rem;
+}
+.register {
+    width:96%;
+    height:2rem;
+    margin-left: 2%;
+    margin-top: 10%;
+    background-color: #e63741;
+    border: none;
+    color: #fff;
+    font-size: 0.75rem;
+    font-family: 'Microsoft YaHei';
+    background-color: rgb(252, 90, 40);
+}
+#registerForm .input-container .username {
+    padding-right: 160px;
+    text-indent: 1.2rem;
+}
+#registerForm .input-container .phone_number {
+    padding-right: 160px;
+    text-indent: 1.2rem;
+}
+.input-container .btn {
+    position: absolute;
+    right: 0.6rem;
+    top: 0.4rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background-color: #fc5a28;
+    border: none;
+    border-radius: 0.9rem;
+    color:#fff;
+    padding: 0 0.8rem;
+    font-family: 'Microsoft YaHei';
+}
+
+#register .confirm {
+    color: #fff;
+    background-color: #dadada;
+    width: 94%;
+    height: 2rem;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 12rem;
+    margin-left: 3%;
+    border: none;
+    border-radius: 0;
+}
+
+
+.msgwords #J_getCode {
+    display: inline-block;
+    position: absolute;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background-color: #fc5a28;
+    text-align: center;
+    border: none;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    top: 0.4rem;
+    right: 0.6rem;
+    border-radius: 0.9rem;
+    color: #fff;
+    font-size: 0.7rem;
+    z-index: 3333;
+}
+.msgwords #J_resetCode{
+     display: inline-block;
+    position: absolute;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background-color: #fc5a28;
+    text-align: center;
+    border: none;
+    width: 5rem;
+    top: 0.4rem;
+    right: 0.5rem;
+    border-radius: 0.9rem;
+    color: #fff;
+    font-size: 0.7rem;
+    z-index: 3333;
+}

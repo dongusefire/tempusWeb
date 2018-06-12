@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>交易明细</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" href="../public/css/public.css">
+<script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page page-current" id="integral_detail">
+			<link rel="stylesheet" type="text/css" href="../public/css/integral_detail.css"/>
+			<header class="bar bar-nav">
+			  <a class="icon icon-left pull-left back"></a>
+			  <h1 class="title">积分交易明细</h1>
+			</header>
+			<div class="filter">
+				<div class="top clearfix">
+					<ul class="choose_title clearfix">
+						<li><a href="#" class="active">全部</a></li>
+						<li><a href="#">积分类型</a></li>
+						<li><a href="#">业务类型</a></li>
+					</ul>
+				</div>
+				<div class="filter-list">
+					<ul class="list active" id="integratin_type"></ul>
+					<ul class="list" id="business_type">
+						<li>冻结</li>
+						<li>换入</li>
+						<li>换出</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content infinite-scroll infinite-scroll-bottom">
+				<div class="list-block">
+					<ul data-type="integralDetail" page-min="0">
+					</ul>
+				</div>
+				<div class="infinite-scroll-preloader">
+	            	<div class="preloader"></div>
+	          	</div>
+	          	<div class="box-null">您的积分账户尚无变动记录~</div>
+			</div>
+			<div class="filter-bg"></div>
+		</div>
+	</div>
+</body>
+</html>

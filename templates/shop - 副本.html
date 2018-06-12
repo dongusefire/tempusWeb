@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>我的积分</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" href="../public/css/public.css">
+<script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current" id="integral_detail">
+            <link rel="stylesheet" type="text/css" href="../public/css/integral_detail.css"/>
+            <header class="bar bar-nav">
+              <a class="icon icon-left pull-left back" href="/templates/wallet.html"></a>
+              <h1 class="title">商城</h1>
+            </header>
+            <div style="height:44px;"></div>
+            <div class="scroll-wrapper" style="width:100%;height:100%;">
+                <iframe scrolling="yes" width=100% height=100%  name="iframe" type="text/html" src="http://m.benefit.hnagroup.com"></iframe>
+          </div>
+          <style>
+        .scroll-wrapper {
+			position: absolute;   
+            right: 0;   
+		    bottom: 0;   
+			left: 0;  
+			top: 0;  
+			-webkit-overflow-scrolling: touch;  
+			overflow-scrolling: touch; 
+		    overflow-y: scroll;  
+		    width:100%;
+			height:100%;
+		}
+
+		.scroll-wrapper iframe{
+			width:100%;
+			height:100%;
+        }
+          </style>
+
+            <script type="text/javascript">
+               // alert('商城只能消费福币积分');
+               // alert($('iframe').width());
+//                $('[name="iframe"]').height($(window).height()-44);
+              //  $('iframe').width($(window).width());
+            </script>
+        </div>
+    </div>
+</body>
+</html>

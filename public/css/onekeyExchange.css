@@ -1,0 +1,149 @@
+/*顶部栏返回箭头*/
+#onekeyExchange {
+	background-color: #f9f9f9;
+}
+.bar {
+    background-color: #394351;
+    position: relative;
+}
+.bar h1 {
+    color: #fff;
+}
+.bar a img {
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+.target {
+	height: 4rem;
+	line-height: 4rem;
+	text-indent: 1rem;
+	font-size: 0.7rem;
+	background-color: #fff;
+}
+.estimate {
+	height: 9rem;
+	background-color: #fff;
+}
+.estimate p {
+	text-indent: 1rem;
+	padding:0.8rem 0;
+	font-size: 0.7rem;
+}
+.estimate .tips {
+	font-size: 0.6rem;
+	color:#b1b0b0;
+}
+.estimate .tips img {
+	width: 0.6rem;
+	vertical-align: middle;
+}
+.account .title_ {
+	background-color: #f9f9f9;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	font-size: 0.8rem;
+	text-indent: 1rem;
+	color:#717171;
+}
+#onekeyExchange .estimate .figure .button {
+    color: #798186;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px #d8d8d8 solid;
+    border-radius: 0.2rem;
+    background-color: #f3f3f3;
+}
+#onekeyExchange .estimate .figure {
+	display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    /*padding: 0 1rem;*/
+    width: 70%;
+    margin-left: 1rem;
+}
+#onekeyExchange .estimate .figure .input_text {
+	border: 1px #d8d8d8 solid;
+    border-radius: 0.1rem;
+    width: 9rem;
+    height: 2rem;
+    margin: 0 0.3rem;
+    overflow: hidden;
+}
+#onekeyExchange .estimate .figure .input_text input {
+	border: none;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    text-align: center;
+}
+
+/*已关联账户*/
+#onekeyExchange .account .account-list {
+	background: #fff;
+	padding-top: 1rem;
+}
+#onekeyExchange .account .account-list ul {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	margin: 0 0.5rem;
+}
+#onekeyExchange .account .account-list ul li {
+	width: 31%;
+	margin:0 1%;
+	margin-bottom: 1rem;
+}
+#onekeyExchange .account .account-list ul li .assount-img {
+	width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    left: 10%;
+}
+#onekeyExchange .account .account-list ul li .assount-img img {
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+#onekeyExchange .account .account-list ul li .assount-info {
+	width: 100%;
+	text-align: center;
+	color:#787878;
+	margin-top: 0.3rem;
+}
+#onekeyExchange .account .account-list ul li .assount-info span {
+	display: block;
+}
+#onekeyExchange .btn_onekey {
+	width: 92%;
+	background-color: #fc6a3c;
+	border-radius: 2px;
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	color:#ffffff;
+	font-size: 0.75rem;
+	box-shadow: 3px 3px 2px #dcdcdc;
+	position: fixed;
+	bottom: 0.5rem;
+	left: 4%;
+}
+#onekeyExchange .account {
+	margin-bottom: 3rem;
+}

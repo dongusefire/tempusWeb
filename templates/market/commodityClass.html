@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商品分类</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../../public/SUI/dist/css/sm.min.css">
+<link rel="stylesheet" type="text/css" href="../../public/css/public.css">
+<script type="text/javascript" src="../../public/scripts/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+<script src="../../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+	<div class="page page-current" id="commodity">
+		<link rel="stylesheet" href="../../public/Swiper/dist/css/swiper.min.css" />
+		<link href="../../public/market/styles/style.css" rel="stylesheet" type="text/css">
+		<header class="bar bar-nav">
+		  <a class="icon icon-left pull-left back" style="color:#fff;"></a>
+		  <h1 class="title">商品分类</h1>
+		</header>
+		<div class="nav-top">
+			<div class="menu-tab">
+				<div id="allClassDiv">
+					<span>所有分类</span>
+				</div>
+				<div class="swiper-container" id="classTitleDiv">
+			        <div class="swiper-wrapper"></div>
+			    </div>
+			</div>
+			<div class="img-icon">
+				<span id="classDownImg"><img status="1" src="/hnair/images/shangpinfenlei_xiala_01.png"></span>
+			</div>
+		</div>
+		<div class="content">
+			<div id="classDownMask"></div>
+			<div id="classDown">
+				<ul class="clearfix"></ul>
+			</div>
+			<div id="contentDiv" class="clearfix"></div>
+			<div id="loadingDiv" style="display:none;width:100%;text-align:center;color:#ccc;font-size:15px;line-height:40px;">下拉加载更多商品</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

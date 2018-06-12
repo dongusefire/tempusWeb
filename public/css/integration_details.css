@@ -1,0 +1,98 @@
+.page {
+	background-color: #fff;
+}
+#integration_details header.bar {
+	background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+}
+#integration_details header.bar a.icon {
+    color: #fff;
+}
+#integration_details header.bar .title {
+    color: #fff;
+}
+#integration_details .content_ .explain {
+	width: 96%;
+	margin:0 auto;
+	margin-top: 0.5rem;
+}
+#integration_details .content_ .explain p {
+	margin-bottom: 0.6rem;
+}
+#integration_details .top .choose_title li{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 0.74rem;
+}
+#integration_details .top .choose_title a {
+	display: inline-block;
+	height: 100%;
+	width: 60%;
+	margin:0 auto;
+	color:#787878;
+}
+#integration_details .top .choose_title .active_bottom {
+ 	border-bottom:2px solid #ff674d;
+ 	color:#ff674d;	
+}
+#integration_details .content_ .b_logo img {
+	width: 1.2rem;
+    border-radius: 50%;
+}
+#integration_details .content_ .estimate {
+	position: absolute;
+    right: 1.4rem;
+    height: 100%;
+    padding-top: 0.4rem;
+}
+#integration_details .content_ .notestimate {
+    float: left;
+    height: 100%;
+    padding-top: 0.8rem;
+}
+#integration_details .content_ .notestimate p {
+	color:#3b4451;
+}
+#integration_details .content_ .estimate p {
+	color:#3b4451;
+}
+#integration_details .content_ .notestimate .balance {
+	color:#b2b2b2;
+}
+#integration_details .content_ .estimate .balance {
+	color:#b2b2b2;
+	font-size: 0.6rem;
+}
+#integration_details .content_ .items_ {
+    margin-left: 1.6rem;
+    height: 3.65rem;
+    border-bottom: 1px solid rgba(202,185,185,0.27);
+    position: relative;
+}
+#integration_details .content_ .list_father {
+	padding-left: 1rem;
+}
+#integration_details .content_ .list_father .b_logo {
+	position: absolute;
+	top: 1.2rem;
+    left: -1.8rem;
+}
+#integration_details ul.list {
+	position: fixed;
+	top:4.7rem;
+	z-index: 10;
+	width: 100%; 
+	background-color: #fff;
+	display: none;
+}
+#integration_details ul.list li {
+	line-height: 2.5rem;
+	font-size: 0.74rem;
+	color: #333333;
+	padding-left: 1rem;
+}
+#integration_details ul.list li:last-child{
+	margin-bottom: 1rem;
+}

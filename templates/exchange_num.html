@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交易数量</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../public/SUI/dist/css/sm.min.css">
+    <script type="text/javascript" src="../public/scripts/zepto.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../public/SUI/dist/js/sm.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../public/css/public.css">
+    <link rel="stylesheet" href="../public/css/exchange.css">
+    <script src="../public/scripts/Public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page-group">
+	<div class="page page-current" id="exchange_num">
+		<link rel="stylesheet" type="text/css" href="../public/css/exchange_num.css"/>
+		<header class="bar bar-nav">
+		  <a class="icon icon-left pull-left back"></a>
+		  <h1 class="title"></h1>
+		</header>
+		<div class="content native-scroll">
+			<div class="form-list">
+				<div class="items-box">
+					<div class="items-title">
+						换入数量
+					</div>
+					<div class="items-content J_Stock">
+						<span class="button btn-substract" id="substract">-</span>
+						<span class="input_text"><input type="text" name="num" value="1" min="1" id="num"/></span>
+						<span class="button btn-add" id="add">+</span>
+					</div>
+				</div>
+				<p style="background: #f9f9f9; height: 1rem;"></p>
+				<div class="items-box">
+					<div class="items-title">
+						使用
+					</div>
+					<div class="items-content">
+						<div class="typeList">
+							<div class="items-block">
+								<span class="close-icon"><img src="../public/images/close-icon.png"/></span>
+								<span class="input_text">
+									<input type="number" name="num" value="1" />
+								</span>
+								<div class="select_box radio_unit">
+									<span class="select_input"></span>
+									<span class="select_down"></span>
+								</div>
+							</div>
+						</div>
+						<p><i class="img-icon"><img src="../public/images/prompt2.png"></i>默认数据仅供参考</p>
+					</div>
+				</div>
+				<div class="form_btn">
+					<a href="#">＋点击增加支付类型</a>
+				</div>
+			</div>
+			<div class="account">
+				<h3>已关联账户</h3>
+				<div class="account-list">
+					<ul node-type="relateMember">
+					</ul>
+				</div>
+			</div>
+			<div class="empty"></div>
+			
+		</div>
+		<div class="cn_father">
+			<div class="change_now">立即兑换</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

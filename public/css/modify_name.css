@@ -1,0 +1,48 @@
+.bar {
+    background: linear-gradient(to bottom, #ff4141 0%,#ff674d 100%);
+    position: relative;
+}
+.bar h1 {
+    color: #fff;
+}
+.bar a img {
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+.bar .back {
+	z-index: 1000;
+	position: absolute;
+	top:0;
+	left: 0.5;
+	width: 3rem;
+}
+#modify_name {
+	background-color: #f9f9f9;
+}
+#modify_name .content .modify {
+	margin-top: 0.7rem;
+	background-color: #fff;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	text-indent: 0.6rem;
+	position: relative;
+}
+#modify_name .content .modify input {
+	border:none;
+	height: 1.2rem;
+	font-size: 0.7rem;
+	width: 94%;
+}
+#modify_name  .confirm {
+	color:#fff;
+	background-color: #dadada;
+	width: 94%;
+	height: 2rem;
+	font-size: 0.75rem;
+	position: absolute;
+	top: 10rem;
+	margin-left: 3%;
+	border:none;
+}
